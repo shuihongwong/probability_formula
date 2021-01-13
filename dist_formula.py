@@ -12,4 +12,7 @@ var_hypergeom = lambda a, b, n: n*(a/a+b) *(1 - a/(a+b)) * ((a+b-n)/a+b-1)
 prob_geom = lambda p, k: (1-p)**(k-1) * p
 exp_geom = lambda p: 1/p
 var_geom = lambda p: (1-p)/p**2
-
+#negative binominal distribution
+p_neg_bin = lambda k, r, p: f_fact(k-1)/(f_fact(k-r) * f_fact(r-1)) * p**r * (1-p)**(k-r)
+exp_neg_bin = lambda r, p: r/p
+var_neg_bin = lambda r, p: r*(1-p)/p**2
