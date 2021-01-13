@@ -9,7 +9,7 @@ prob_hypergeom = lambda a, b, n, k: (f_fact(a)/(f_fact(a-k) *f_fact(k)) * f_fact
 exp_hypergeom = lambda a, b, n: n*(a/(a+b))
 var_hypergeom = lambda a, b, n: n*(a/a+b) *(1 - a/(a+b)) * ((a+b-n)/a+b-1)
 #geometric distribution
-f_geom = lambda p, k: (1-p)**(k-1) * p
+prob_geom = lambda p, k: (1-p)**(k-1) * p
 exp_geom = lambda p: 1/p
 var_geom = lambda p: (1-p)/p
 
