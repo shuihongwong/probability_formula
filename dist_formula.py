@@ -17,4 +17,7 @@ p_neg_bin = lambda k, r, p: f_fact(k-1)/(f_fact(k-r) * f_fact(r-1)) * p**r * (1-
 exp_neg_bin = lambda r, p: r/p
 var_neg_bin = lambda r, p: r*(1-p)/p**2
 # Poisson distribution
+prob_poisson = lambda Lambda, n, t: math.exp(-Lambda*t) *(Lambda*t)**n/f_fact(n)
+exp_poisson = lambda Lambda: Lambda
+var_poisson = lambda Lambda: Lambda
 
