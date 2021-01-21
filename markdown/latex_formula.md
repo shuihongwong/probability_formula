@@ -14,3 +14,8 @@ $$
 $$
 y_{j} = response\: of\: data\: point\: j
 $$
+
+margin width
+$$
+\frac{2}{\sqrt{\sum\limits_{i=1}^{m} (a_{i})^2}}
+$$
