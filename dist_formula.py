@@ -20,4 +20,9 @@ var_neg_bin = lambda r, p: r*(1-p)/p**2
 prob_poisson = lambda Lambda, n, t: math.exp(-Lambda*t) *(Lambda*t)**n/f_fact(n)
 exp_poisson = lambda Lambda: Lambda
 var_poisson = lambda Lambda: Lambda
+# Uniform distribution
+prob_unif = lambda a, b: 1/(b-a)
+exp_unif = lambda a, b: (a + b)/2
+var_unif = lambda a, b: (a + b)**2 /12
+
 
